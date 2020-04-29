@@ -43,7 +43,7 @@ try:
             a = 0
             for i in range(length):
                 #print(whole[i])
-                find = re.match(name1, whole[i])
+                find = re.match(r'\b'+name1+'\b', whole[i])
                 #print(find)
                 if find:
                     a = 1
